@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A18F962C-2906-4931-BDF9-29B952C54566}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoEstructurasCSharp</RootNamespace>
+    <AssemblyName>ProyectoEstructurasCSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InputKey, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\InputKey.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArbolBinario.cs" />
+    <Compile Include="ArbolBinarioOrdenado.cs" />
+    <Compile Include="Arista.cs" />
+    <Compile Include="Cola.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioAlgoritmos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioAlgoritmos.Designer.cs">
+      <DependentUpon>FormularioAlgoritmos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioArbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioArbol.Designer.cs">
+      <DependentUpon>FormularioArbol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioBurbuja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioBurbuja.Designer.cs">
+      <DependentUpon>FormularioBurbuja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioCocktail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioCocktail.Designer.cs">
+      <DependentUpon>FormularioCocktail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioCola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioCola.Designer.cs">
+      <DependentUpon>FormularioCola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioCountingSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioCountingSort.Designer.cs">
+      <DependentUpon>FormularioCountingSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioGrafo.Designer.cs">
+      <DependentUpon>FormularioGrafo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioInsertion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioInsertion.Designer.cs">
+      <DependentUpon>FormularioInsertion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularioListaDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularioListaDoble.Designer.cs">
+      <DependentUpon>formularioListaDoble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioListaEnlazada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioListaEnlazada.Designer.cs">
+      <DependentUpon>FormularioListaEnlazada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioPila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioPila.Designer.cs">
+      <DependentUpon>FormularioPila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioRadix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioRadix.Designer.cs">
+      <DependentUpon>FormularioRadix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioShell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioShell.Designer.cs">
+      <DependentUpon>FormularioShell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaCircDoble.cs" />
+    <Compile Include="ListaCircular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaCircular.Designer.cs">
+      <DependentUpon>ListaCircular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaCircularClase.cs" />
+    <Compile Include="ListaCircularDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaCircularDoble.Designer.cs">
+      <DependentUpon>ListaCircularDoble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDoblementeEnlazada.cs" />
+    <Compile Include="ListaEnlazada.cs" />
+    <Compile Include="MatrizAdyacencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatrizAdyacencia.Designer.cs">
+      <DependentUpon>MatrizAdyacencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatrizPeso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatrizPeso.Designer.cs">
+      <DependentUpon>MatrizPeso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nodo.cs" />
+    <Compile Include="NodoArbol.cs" />
+    <Compile Include="NodoDoble.cs" />
+    <Compile Include="NodoGrafo.cs" />
+    <Compile Include="Pila.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioAlgoritmos.resx">
+      <DependentUpon>FormularioAlgoritmos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioArbol.resx">
+      <DependentUpon>FormularioArbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioBurbuja.resx">
+      <DependentUpon>FormularioBurbuja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioCocktail.resx">
+      <DependentUpon>FormularioCocktail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioCola.resx">
+      <DependentUpon>FormularioCola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioCountingSort.resx">
+      <DependentUpon>FormularioCountingSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioGrafo.resx">
+      <DependentUpon>FormularioGrafo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioInsertion.resx">
+      <DependentUpon>FormularioInsertion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularioListaDoble.resx">
+      <DependentUpon>formularioListaDoble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioListaEnlazada.resx">
+      <DependentUpon>FormularioListaEnlazada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioPila.resx">
+      <DependentUpon>FormularioPila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioRadix.resx">
+      <DependentUpon>FormularioRadix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioShell.resx">
+      <DependentUpon>FormularioShell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaCircular.resx">
+      <DependentUpon>ListaCircular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaCircularDoble.resx">
+      <DependentUpon>ListaCircularDoble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatrizAdyacencia.resx">
+      <DependentUpon>MatrizAdyacencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatrizPeso.resx">
+      <DependentUpon>MatrizPeso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InputKey.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
